@@ -1,127 +1,182 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=git remo, initial-scale=1.0">
-    <title>PIZZA APP</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=git remo, initial-scale=1.0">
+  <title>PIZZA APP</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
 </head>
+
 <body>
-    <nav class="navbar navbar navbar-light bg-light">
-        <a class="navbrand"><strong>PIZZA APP</strong></a>
-        <ul class="navbar nav">
-            <li class="nav-link">
-                <a class="nav-item" href="">Home</a>
-                <a class="nav-item" href="">Pizza $ Pricing</a>
-                <a class="nav-item" href="">Order</a>
-                <a class="nav-item" href="">Contacts</a>
-            </li>
-        </ul>
-    </nav>
-    <div class="container">
-      <div class="bd-example">
-          <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-              <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./images/background 2.jpeg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
-                  <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./images/background.jpeg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="./images/picture 3.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+  <nav class="navbar navbar navbar-light bg-light">
+    <a class="navbrand"><strong>PIZZA APP</strong></a>
+    <ul class="navbar nav">
+      <li class="nav-link">
+        <a class="nav-item" href="">Home</a>
+        <a class="nav-item" href="#order">Pizza $ Pricing</a>
+        <a class="nav-item" href="#order">Order</a>
+        <a class="nav-item" href="#contact">Contacts</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="container">
+    <div class="bd-example">
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./images/background 2.jpeg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/background.jpeg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./images/picture 3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      <div id="about">
+      <div class="prices ">
+        <p class="about">The Pizza App is an industry leader in the quick service delivery pizza game.<br> Serving hot
+          oven-fresh pizza with its signature all-natural ketchup and using only the freshest ingredients.<br> The
+          homemade pizza dough is
+          produced in-house daily and is another reason why the pizza at The Pizza Palace always tastes better and we
+          have plenty "value-for-money" options that keep our satisfied customers coming back time after time.</p>
+        <br><br>
+      </div>
+      </div>
+      <form class="form-group" id="custom-pizza">
+        <div id="order">
+        <div class="order">
+          <div class="row">
+            <div class="col-md-4 col-xs-9">
+              <div class="card">
+                <img src="./images/home page.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Sizes of pizza</h5>
+                  <p class="card-text">Choose the size of Pizza:</p>
+                  <select required class="form-control" id="size">
+                    <option></option>
+                    <option value="small-pizza">small (500)</option>
+                    <option value="medium-pizza">medium (750)</option>
+                    <option value="large-pizza">large (1000)</option>
+                  </select>
                 </div>
               </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-            <div class="prices ">
-              <p class="about">The Pizza App is an industry leader in the quick service delivery pizza game.<br> Serving hot oven-fresh pizza with its signature all-natural ketchup and using only the freshest ingredients.<br> The homemade pizza dough is
-              produced in-house daily and is another reason why the pizza at The Pizza Palace always tastes better and we have plenty "value-for-money" options that keep our satisfied customers coming back time after time.</p><br><br>
+            <div class="col-md-4 col-xs-9">
+              <div class="card">
+                <img src="./images/hot pizza.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Crust</h5>
+                  <p class="card-text">Choose a crust:</p>
+                  <select required class="form-control" id="crust">
+                    <option></option>
+                    <option value="cheese-filled">Cheese filled (100)</option>
+                    <option value="thick">Thick (150)</option>
+                    <option value="stuffed">Stuffed (150)</option>
+                    <option value="crispy">Crispy (150)</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-xs-9">
+              <div class="card">
+                <img src="./images/picture 3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Toppings</h5>
+                  <p class="card-text">Choose toppings:</p>
+                  <select required class="form-control" id="toppings">
+                    <option></option>
+                    <option value="pepperoni">Pepperoni (100)</option>
+                    <option value="sausage">Sausage (150)</option>
+                    <option value="bacon">Bacon (200)</option>
+                    <option value="mushrooms">Mushrooms (150)</option>
+                    <option value="chicken">Chicken (150)</option>
+                  </select>
+                </div>
+              </div>
+            </div>
           </div>
-          <form class="form-group" id="custom-pizza">
-            <div class="order">
-                <div class="row">
-                    <div class="col-md-4 col-xs-9">
-                        <div class="card">
-                            <img src="./images/home page.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Sizes of pizza</h5>
-                                <p class="card-text">Choose the size of Pizza:</p>
-                                <select required class="form-control" id="size">
-                                    <option></option>
-                                    <option value="small-pizza">small (500)</option>
-                                    <option value="medium-pizza">medium (750)</option>
-                                    <option value="large-pizza">large (1000)</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-xs-9">
-                      <div class="card">
-                          <img src="./images/hot pizza.jpg" class="card-img-top" alt="...">
-                          <div class="card-body">
-                              <h5 class="card-title">Crust</h5>
-                              <p class="card-text">Choose a crust:</p>
-                              <select required class="form-control" id="crust">
-                                  <option></option>
-                                  <option value="cheese-filled">Cheese filled (100)</option>
-                                  <option value="thick">Thick (150)</option>
-                                  <option value="stuffed">Stuffed (150)</option>
-                                  <option value="crispy">Crispy (150)</option>
-                              </select>
-                            </div>
-                          </div>
-                      </div>
-                      <div class="col-md-4 col-xs-9">
-                          <div class="card">
-                              <img src="css/p1.jpg" class="card-img-top" alt="...">
-                              <div class="card-body">
-                                  <h5 class="card-title">Toppings</h5>
-                                  <p class="card-text">Choose toppings:</p>
-                                  <select required class="form-control" id="toppings">
-                                      <option></option>
-                                      <option value="pepperoni">Pepperoni (100)</option>
-                                      <option value="sausage">Sausage (150)</option>
-                                      <option value="bacon">Bacon (200)</option>
-                                      <option value="mushrooms">Mushrooms (150)</option>
-                                      <option value="chicken">Chicken (150)</option>
-                                  </select>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-  </body>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        </div>
+      </div><br><br>
+        <input type="number" id="amount" placeholder="Number of pizzas" required>
+        <button type="submit" class="order-button btn btn-dark" id="submit-pizza">Place Order</button>
+
+      </form>
+      <div class="row">
+        <div id="col-md-6">
+          <div class="col-xs-4" id="price-content">
+            <h1 class="page-header">Cart</h1>
+            <h2>Price: Ksh <span id="final-cost"></span></h2><br><br>
+            <div id="deliver" class="deliver">
+              <h5>Would you like us to deliver your pizza for Ksh.150 transport?</h5><br>
+              <form id="address-form">
+                <div class="col-xs-6">
+                  <label for="first-name"></label>
+                  <input id="location" type="text" size="40" placeholder="Enter where you live..." required />
+                  <button class="btn btn-dark complete" type="submit">Enter</button>
+                  <h3><span id="delivery-option"></span></h3>
+                </div>
+              </form>
+            </div><br>
+            <button type="btn" class="btn btn-dark" id="checkout-btn">Checkout</button><br><br>
+            <div id="order-details" class="col-xs-12">
+              <ul id="pizza-details"><strong>Your order is: </strong></ul>
+              <h5 id="pizza-details">Thank you and Welcome again!</h5>
+            </div>
+          </div>
+        </div>
+        <!-- <div id=col-md-6>
+          <img src="./images/home page.jpg" alt="" width="350px">
+        </div> -->
+      </div>
+      <footer id="contact" class="footer" size="240px">
+        <a class="footer-link" href="https://www.linkedin.com/in/saramunini"><i class="fab fa-linkedin"></i></a>
+        <a class="footer-link" href="https://twitter.com/pixel_tiny"><i class="fab fa-twitter-square"></i></a>
+        <p class="copyright"> © 2019 The Pizza Palace </p>
+      </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="./js/script.js"></script>
 </body>
+
 </html>
-    
+
 </body>
-</html>
+
+</html> -->
